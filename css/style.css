@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#inicio {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #454545;
+
+}
+
+#salas {
+    background-color: lightyellow;
+}
+
+.messages-list {
+    display: flex;
+}
+
+.messages-title {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    height: 30px;
+    /* Add any additional styling you want for the footer */
+}
+
+#mensagens {
+    margin-bottom: 30px;
+}
+
+.message {
+    border-radius: 5%;
+    margin: 1rem;
+    padding-left: 1rem;
+}
+
+.message p {
+    margin: 0;
+    padding: 0;
+}
+
+.message .nick {
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.message label {
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.message-left {
+    word-wrap: break-word;
+    width: 35vw;
+    justify-content: flex-start;
+    background-color: #456545;
+}
+
+.message-right {
+    word-wrap: break-word;
+    width: 35vw;
+    justify-content: flex-end;
+    background-color: #454575;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .message-left {
+        width: 90%;
+    }
+
+    .message-right {
+        width: 90%;
+    }
+}
